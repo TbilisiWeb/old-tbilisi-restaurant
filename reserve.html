@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დაჯავშნა</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: #f0f0f0;
+      font-family: 'Georgia', serif;
+    }
+    header {
+      background-color: #2a2a2a;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #d4af37;
+    }
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #d4af37;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📅 დაჯავშნეთ მაგიდა</h1>
+  <nav>
+    <a href="index.html">მთავარი</a> |
+    <a href="menu.html">მენიუ</a> |
+    <a href="register.html">რეგისტრაცია</a>
+  </nav>
+</header>
+
+<form>
+  <label for="fullname">სრული სახელი</label>
+  <input type="text" id="fullname" name="fullname" required>
+
+  <label for="date">თარიღი</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="time">დრო</label>
+  <input type="time" id="time" name="time" required>
+
+  <label for="guests">სტუმრების რაოდენობა</label>
+  <select id="guests" name="guests">
+    <option>1</option>
+    <option>2</option>
+    <option>3–4</option>
+    <option>5+</option>
+  </select>
+
+  <button type="submit">დაჯავშნა</button>
+</form>
+
+</body>
+</html>
